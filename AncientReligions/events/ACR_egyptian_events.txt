@@ -3,8 +3,10 @@
 # ANCIENT RELIGIONS
 # - Egyptian events
 #
-# Event ID ancrel.4000 - ancrel.4008 Decision events
+# Event ID ancrel.4000 - ancrel.4009 Decision events
 # Event ID ancrel.4010 - ancrel.4019 Sed festival
+#
+# Event ID ancrel.4100 - ancrel.4199 Revival events
 #
 ###################################################
 
@@ -637,4 +639,84 @@ character_event = {
 		}
 	}
 }
+
+###############################
+#
+# - Isolated oasis
+#
+###############################
+
+# Sandstorm approaching
+# A) Stop and mount tent
+# B) Continue and go faster
+character_event = {
+	id = ancrel.4100
+	desc = ancrel.4100.desc
+	#picture = GFX_evt_temple_egyptian_pagan
+	
+	trigger = {
+		is_abroad = yes
+		location = {
+			terrain = desert
+		}
+	}
+	
+	option = {
+		name = ancrel.4100.a
+	}
+	
+	option = {
+		name = ancrel.4100.b
+	}
+}
+
+# Lost in the desert
+# A) Follow tracks 
+# B) 
+
+# Saved by nomads
+# A)
+# B)
+
+# Converting to the old faith
+# A)
+# B) 
+
+###############################
+#
+# - Ancient pyramid
+#
+###############################
+
+# Visit a pyramid (k_egypt)
+# A) Yes
+# B) No
+
+# Getting behind
+# A) Explore small passage room
+# B) Keep up - don't want to get lost !
+
+# Lost in the pyramid 
+# A) Try some tunnels randomly (20% death , 40% wounded, 40% stressed)
+# B) Sit down and think
+
+# Hearing the spirit of Pharaoh
+# A) Chase the spirit away - explore tunnels (20% death , 40% wounded, 40% stressed)
+# B) Listen to the spirit
+
+# Embrace the old gods
+# A) Knowledge of pyramid tunnels
+
+# Find your companions - visit finished
+# A) Find some valuables
+# B) Improve cultural knowledge
+
+###############################
+#
+# - Invasion of Egypt
+#
+###############################
+
+# 
+
 
